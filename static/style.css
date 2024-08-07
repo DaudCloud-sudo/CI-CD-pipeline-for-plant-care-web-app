@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 1.5em 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: url("hero-bg.jpg") no-repeat center center/cover;
+  color: rgb(255, 255, 255);
+  padding: 4em 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.features,
+.about,
+.contact {
+  padding: 4em 0;
+  text-align: center;
+}
+
+.features h2,
+.about h2,
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.feature-item {
+  margin-bottom: 1.5em;
+}
+
+.feature-item h3 {
+  font-size: 1.5em;
+}
+
+form {
+  display: grid;
+  gap: 1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.75em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* Styles for the Features Section */
+.features {
+  padding: 4em 0;
+  background-color: #ffffff;
+}
+
+.feature-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 2em;
+  margin-bottom: 2em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item h3 {
+  margin-top: 0;
+  color: #4caf50;
+}
+
+.scheduling-form {
+  margin-top: 2em;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 2em;
+}
+
+.scheduling-form h4 {
+  margin-bottom: 1em;
+}
+
+.scheduling-form label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.scheduling-form input,
+.scheduling-form textarea {
+  width: 100%;
+  padding: 0.75em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.scheduling-form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.75em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.scheduling-form button:hover {
+  background-color: #45a049;
+}

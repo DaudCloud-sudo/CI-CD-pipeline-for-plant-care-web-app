@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Care Scheduler</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Plant Care Scheduler</h1>
+        <nav>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h2>Welcome to Your Plant Care Scheduling App</h2>
+          <p>Manage your plant care schedule efficiently and effortlessly.</p>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="container">
+          <h2>Features</h2>
+          <div class="feature-item">
+            <h3>Easy Scheduling</h3>
+      <p>Quickly set up reminders and schedules for your plants.</p>
+      
+      <!-- Interactive Scheduling Form -->
+      <div class="scheduling-form">
+        <h4>Set Up a Reminder</h4>
+        <form action="#" method="post">
+          <label for="plant-name">Plant Name:</label>
+          <input type="text" id="plant-name" name="plant-name" required>
+
+          <label for="reminder-date">Reminder Date:</label>
+          <input type="date" id="reminder-date" name="reminder-date" required>
+
+          <label for="reminder-time">Reminder Time:</label>
+          <input type="time" id="reminder-time" name="reminder-time" required>
+
+          <label for="notes">Notes:</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Additional notes about the plant or care instructions"></textarea>
+
+          <button type="submit">Set Reminder</button>
+        </form>
+      </div>
+          <div class="feature-item">
+            <h3>Plant Database</h3>
+            <p>Access detailed care instructions for various plants.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Notifications</h3>
+            <p>
+              Receive notifications when it's time to water or care for your
+              plants.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <h2>About Us</h2>
+          <p>
+            We are dedicated to helping plant enthusiasts maintain their green
+            spaces with ease. Our app provides all the tools you need to keep
+            your plants healthy and thriving.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Plant Care Scheduler. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
