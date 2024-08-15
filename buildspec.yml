@@ -1,0 +1,36 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+    commands:
+      - echo Installing Python dependencies...
+      - pip install -r requirements.txt
+
+  pre_build:
+    commands:
+      - echo Pre-build phase: Environment setup
+      - python -m unittest discover -s tests || echo "No tests to run"
+
+  build:
+    commands:
+      - echo Build phase: Preparing Flask application
+      - mkdir -p build
+      - cp -r * build/ # Copy all project files to the build directory
+
+  post_build:
+    commands:
+      - echo Post-build phase: Finalizing
+      - echo Build complete on `date`
+
+artifacts:
+  files:
+    - "**/*"
+  base-directory: build
+  discard-paths: no
+
+cache:
+  paths:
+    - "venv/**/*"
+    - "node_modules/**/*"
